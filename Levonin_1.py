@@ -22,22 +22,6 @@ kokku=randint(10,100)
 print("kokku: ",kokku)
 mitu = int(input("mitu kommi  tahad ära võtta?"))
 kokku-=mitu
-print("nüüd laua peal on",kokku,"kommid")
+print("Nüüd Laua peal on",kokku,"kommid")
 
 
-from random import *
-
-p=randint(1,5)
-hind=12.90
-hind*=1.1 #hind koos jatatega
-osa=round(hind/p,2)
-print("iga sõber maksab: ",osa)
-
-
-try:
-    aeg = float(input("Mitu tundi kulus sõiduks? "))
-    teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
-    kiirus = aeg / teepikkus
-    print("Sinu kiirus oli " + str(kiirus) + "km/h")
-except:
-    print("viga andmetüübiga")

@@ -11,5 +11,3 @@ if Vastus == 1:
     mass = int(input("Kirjuta sinu mass: "))
     indeks = mass /(0.01*pikkus)**2
     print(nimi + "!Sinu keha indeks on: ",round(indeks))
-
-

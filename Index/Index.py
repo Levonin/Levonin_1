@@ -1,7 +1,4 @@
-﻿from http.client import UNPROCESSABLE_ENTITY
-
-
-print("Tere! olen sinu uus sõber - Python")
+﻿print("Tere! olen sinu uus sõber - Python")
 nimi=input("Kirjuta sinu nimi:")
 print(nimi)
 print("Oi kui ilus nimi!")

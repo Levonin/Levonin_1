@@ -1,4 +1,12 @@
-﻿#1
+﻿x=0
+while x!=5:
+print (x,end=", ")
+
+
+
+
+
+#1
 #for
 #r=0
 #for i in range(15):
@@ -43,7 +51,7 @@ for i in range(10, 20):
 i = 10
 while i < 20:
         print(i*i)
-i += 2
+i += 1
 
 i = 10
 while True:

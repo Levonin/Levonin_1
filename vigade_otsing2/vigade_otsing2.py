@@ -1,18 +1,18 @@
-﻿print("*** ИГРЫ С ЧИСЛАМИ ***")
+print("*** MÄNGUD NUMBRITEGA ***")
 print()
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 while True:
     try:
-        a = abs(int(input("Введите целое число => ")))
+        a = abs(int(input(" Sisesta täisarv => ")))
         break
     except ValueError:
-         print("Это не целое число")
+         print("see ei ole täisarv")
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if a==0:
-    print("Нет смысла ничего делать с нулём")
+    print("ei ole midagi teha selle nulliga")
 else:
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("Определяем, сколько в числе чётных и сколько нечётных цифр")
+    print(" Määrake, kui palju on paaris- ja mitu paaritut numbrit ")
     print()
     c=b=a
     paaris = 0
@@ -24,11 +24,11 @@ else:
                     paaritu =+ 1
             b = b // 10
     
-    print("Чётных цифр: paaris")
-    print("Нечётных цифр: paaritu")
+    print("Kuue numbriga: paaris",paaris)
+    print("Paaritu arv  : paaritu",paaritu)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("*Переворачиваем* введённое число")
+    print("Pöörame sisestatud arvu ümber")
     print()
     b=0
     while a > 0:
@@ -36,20 +36,20 @@ else:
         a = a // 10
         b = b * 10
         b =+ number
-    print("*Перевёрнутое* число", b)
+    print("Ümberpööratud* arv", b)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("Проверяем гипотезу Сиракуз")
+    print("Uurime Syracuse hüpoteesi")
     print()
     if c % 2 == 0:
-        print("с - чётное число. Делим на 2.")
+        print("с - paarisarv. jagame 2.")
     else:
-        print("с - нечётное число. Умножаем на 3, прибавляем 1 и делим на 2.")
+        print("с - paarituarv. Korrutame 3-ga, liidame 1-ga ja jagame 2-ga.")
     while c != 1:
             if c % 2 == 0:
-                    c == c / 2
+                    c = c / 2
             else:
-                    c == (3*c + 1) / 2
+                    c = (3*c + 1) / 2
             print("c, end=")
     print()
-    print("Гипотеза верна")
+    print("Hüpotees on õige")
